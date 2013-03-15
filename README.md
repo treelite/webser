@@ -6,4 +6,6 @@ Warning: Use it for your development not for your production
 
 start server `./webser <port> <root>`
 
-    ./webser 8080 ./
+    ./webser 8080 ./example/
+
+see [http://localhost:8080/]()
