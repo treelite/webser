@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var server = require('./lib/webser');
+
+var port = process.argv[2];
+var path = process.argv[3];
+
+server.start(port, path);
