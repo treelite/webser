@@ -3,6 +3,9 @@
 var server = require('./lib/webser');
 
 var port = process.argv[2];
-var path = process.argv[3];
+var root = process.argv[3];
+var src = process.argv[4];
 
-server.start(port, path);
+server.start(port, root, src);
+
+/* vim: set ft=javascript : */
