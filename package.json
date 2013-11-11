@@ -2,7 +2,7 @@
   "name": "webser",
   "version": "0.1.0",
   "description": "A simple web server and web develop framework",
-  "main": "./lib/webser",
+  "main": "./lib/main",
   "repository": {
     "type": "git",
     "url": "git://github.com/treelite/webser.git"

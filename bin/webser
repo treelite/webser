@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var server = require('../lib/webser');
+var server = require('../lib/main');
 
 var port = process.argv[2];
 var root = process.argv[3];
