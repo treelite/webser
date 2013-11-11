@@ -4,8 +4,8 @@ Warning: Use it for your development not production
 
 ## Usage ##
 
-start server `./webser <port> <root>`
+start server `./bin/webser <port> <root>`
 
-    ./webser 8080 ./example/
+    ./bin/webser 8080 ./example/
 
 see [http://localhost:8080/](http://localhost:8080/)
