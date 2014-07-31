@@ -1,11 +1,31 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
-var server = require('../lib/main');
+var fs = require('fs');
+var path = require('path');
+var configPath = process.argv[2];
 
-var port = process.argv[2];
-var root = process.argv[3];
-var src = process.argv[4];
+var config = {};
 
-server.start(port, root, src);
+if (configPath) {
+    var baseDir = path.basename(configPath);
+    if (baseDir.charAt(0) == '.') {
+        baseDir = path.resolve(process.cwd(), baseDir);
+    }
+
+    config = fs.readFileSync(configPath, 'utf-8');
+    config = JSON.parse(config.trim());
+
+    var dir;
+    Object.keys(config).forEach(function (key) {
+        if (/Dir$/.test(key)) {
+            dir = config[key];
+            if (dir.charAt(0) != '/') {
+                config.dirs[key] = path.resolve(baseDir, dir);
+            }
+        }
+    });
+}
+
+require('../index')(config);
 
 /* vim: set ft=javascript : */
