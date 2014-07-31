@@ -1,19 +1,23 @@
 {
-  "name": "webser",
-  "version": "0.1.0",
-  "description": "A simple web server and web develop framework",
-  "main": "./lib/main",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/treelite/webser.git"
-  },
-  "keywords": [
-    "server",
-    "framework"
-  ],
-  "author": "cxl",
-  "license": "BSD",
-  "dependencies": {
-    "mu2": "~0.5.17"
-  }
+    "name": "webser",
+    "version": "0.0.1",
+    "description": "A simple web server and web develop framework",
+    "maintainers": [
+        {
+            "name": "treelite",
+            "email": "c.xinle@gmail.com"
+        }
+    ],
+    "main": "./lib/main",
+    "keywords": [
+        "web",
+        "server",
+        "framework"
+    ],
+    "dependencies": {
+        "mu2": "~0.5.17"
+    },
+    "repository": "git://github.com/treelite/webser.git",
+    "bugs": "https://github.com/treelite/webser/issues",
+    "license": "BSD"
 }
