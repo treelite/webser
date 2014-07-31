@@ -6,11 +6,14 @@
 var extend = require('./lib/util/extend');
 var path = require('path');
 
+var cwd = process.cwd();
+
 var DEFAULT_CONFIG = {
     port: 8080,
-    webDir: './web',
-    libDir: './routes',
-    logDir: './log'
+    webDir: path.resolve(cwd, 'web'),
+    libDir: path.resolve(cwd, 'routes'),
+    logDir: path.resolve(cwd, 'log'),
+    tplDir: path.resolve(cwd, 'tpl')
 };
 
 module.exports = function (config) {
