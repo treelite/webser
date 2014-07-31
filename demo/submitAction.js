@@ -1,4 +1,4 @@
-var webser = require('../lib/webser');
+var webser = require('../lib/main');
 
 webser.action('/submit', {
     POST: function (data) {
