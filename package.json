@@ -15,7 +15,8 @@
         "framework"
     ],
     "dependencies": {
-        "mu2": "~0.5.17"
+        "etpl": "^2.1.0-rc",
+        "mkdirp": "^0.5.0" 
     },
     "repository": "git://github.com/treelite/webser.git",
     "bugs": "https://github.com/treelite/webser/issues",
